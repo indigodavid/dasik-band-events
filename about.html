@@ -12,10 +12,19 @@
   <title>Dasik Band</title>
 </head>
 <body>
+  <div class="gray-bar">
+    <ul>
+      <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">MyPage</a></li>
+      <li><a href="#">Korean</a></li>
+    </ul>
+  </div>
   <header class="menu-bar">
-    <a href="index.html" id="logo"></a>
-    <button id="hamburger" type="menu"><i class="fa-solid fa-bars"></i></button>
     <nav>
+      <a href="index.html" id="logo"></a>
+      <button id="hamburger" type="menu"><i class="fa-solid fa-bars"></i></button>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -24,41 +33,54 @@
     </nav>
   </header>
   <section id="about">
-    <h2>"Hello! Sharing World"</h2>
-    <h1>CREATIVE COMMONS GLOBAL SUBMIT 2015</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur reprehenderit quia, laborum repellat, tempore quos voluptatem dolores cupiditate provident dignissimos sapiente rem nisi sit molestiae earum vitae libero alias reiciendis.</p>
-    <p>Please contact us per email for any further questions about CC Global Summit 2015!</p>
-    <a href="mailto:dasikband@gmail.com" class="about-email">dasikband@gmail.com</a>
+    <div class="wrapper">
+      <h2>"Hello! Sharing World"</h2>
+      <h1>CREATIVE COMMONS GLOBAL SUBMIT 2015</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur reprehenderit quia, laborum repellat, tempore quos voluptatem dolores cupiditate provident dignissimos sapiente rem nisi sit molestiae earum vitae libero alias reiciendis.</p>
+      <p>Please contact us per email for any further questions about CC Global Summit 2015!</p>
+      <a href="mailto:dasikband@gmail.com" class="about-email">dasikband@gmail.com</a>
+    </div>
   </section>
   <section id="about-info">
-    <h2>Creative Commons Global Summit 2015 Logo</h2>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, illo repudiandae architecto assumenda reiciendis natus consequuntur qui, rerum vero soluta quam harum placeat vitae eos repellat mollitia nostrum corporis molestiae.</p>
+    <div class="wrapper">
+      <h2>Creative Commons Global Summit 2015 Logo</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, illo repudiandae architecto assumenda reiciendis natus consequuntur qui, rerum vero soluta quam harum placeat vitae eos repellat mollitia nostrum corporis molestiae.</p>
+    </div>
   </section>
   <section id="past-events">
-    <h2>See Past CC Global Summits</h2>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, culpa.</p>
-    <ul>
-      <li>
-        <img src="./images/event.jpg" alt="Event">
-        <h3></h3>
-        <p></p>
-      </li>
-      <li>
-        <img src="./images/event.jpg" alt="Event">
-        <h3></h3>
-        <p></p>
-      </li>
-    </ul>
+    <div class="wrapper">
+      <h2>See Past CC Global Summits</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, culpa.</p>
+      <ul id="events">
+        <li>
+          <img src="./images/event.jpg" alt="Event">
+          <div class="overlay">
+            <h3>2015</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </li>
+        <li>
+          <img src="./images/event.jpg" alt="Event">
+          <div class="overlay">
+            <h3>2013</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
   <footer id="copyright" class="cp-dark">
-    <div class="footer-logo">
-      <img src="./images/creative-commons.png" alt="Creative Commons">
-    </div>
-    <div class="cp-info">
-      <p>2015 Creative Commons Korea. Some Rights Reserved</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae esse mollitia fugiat eum laborum consequatur, exercitationem ipsam in itaque. Reprehenderit.</p>
+    <div class="wrapper">
+      <div class="footer-logo">
+        <img src="./images/creative-commons.png" alt="Creative Commons">
+      </div>
+      <div class="cp-info">
+        <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></p>
+        <p>2022 Creative Commons. Some Rights Reserved</p>
+        <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+      </div>
     </div>
   </footer>
 </body>

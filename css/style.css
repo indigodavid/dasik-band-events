@@ -36,6 +36,10 @@ ol, ul {
 	list-style: none;
 }
 
+li {
+  display: flex;
+}
+
 blockquote, q {
 	quotes: none;
 }
@@ -193,12 +197,7 @@ body > * > * {
   background-repeat: repeat;
 }
 
-#program div {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-#program hr {
+hr {
   margin: 1rem auto 3rem;
   width: 2rem;
   background-color: var(--color-accent);
@@ -223,5 +222,104 @@ body > * > * {
 
 #program h3 {
   color: var(--color-accent);
+  font-size: 1.4rem;
   flex-grow: 1;
+}
+
+#featured li {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.info h4 {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.info p {
+  font-size: 0.95rem;
+  justify-self: flex-end;
+}
+
+#partners {
+  background-color: var(--color-dark);
+  color: var(--color-primary);
+}
+
+.partner-logos > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  align-self: center;
+}
+
+.partner-logos li {
+  flex-basis: 26%;
+}
+
+.partner-logos img {
+  margin: 0 auto;
+}
+
+#copyright > .wrapper {
+  display: flex;
+  gap: 0.8rem;
+}
+
+#copyright > .wrapper > * {
+  flex: 1 1 50%;
+}
+
+#about {
+  text-align: center;
+}
+
+#about h2,
+#about h1 {
+  color: var(--color-accent);
+}
+
+#past-events > .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+#events {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#events li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.overlay {
+  position: absolute;
+  text-align: center;
+}
+
+.wrapper {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
