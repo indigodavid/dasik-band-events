@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+	line-height: 1.5;
   box-sizing: border-box;
 }
 
@@ -74,7 +74,8 @@ a:focus {
 
 /* Variables */
 :root {
-  --color-primary: #272a31;
+  --color-primary: #575757;
+  --color-dark: #272a31;
   --color-accent: #ec5242;
   --color-negative: #d3d3d3;
   --color-white: #fff;
@@ -90,6 +91,11 @@ h1 {
   line-height: 1.5;
 }
 
+section h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
 body {
   font-family: var(--ff-text);
   color: var(--color-primary);
@@ -103,7 +109,7 @@ body > * {
 }
 
 body > * > * {
-  width: 98%;
+  width: 94%;
   max-width: 70rem;
   margin: 0 auto;
 }
@@ -133,6 +139,32 @@ body > * > * {
 
 #intro {
   flex-direction: column;
+  margin: 2rem 0;
+}
+
+#intro h2 {
+  text-align: left;
+  color: var(--color-accent);
+}
+
+#intro h3 {
+  font-size: 2rem;;
+  font-weight: 900;
+  font-family: var(--ff-heading);
+}
+
+#intro p {
+  font-size: 1.3rem;
+}
+
+.phrase {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  max-width: 38rem;
+  border-color: var(--color-white);
+  border-width: 3px;
+  border-style: solid;
+  margin: 1.5rem 0;
 }
 
 #hamburger {
@@ -141,7 +173,7 @@ body > * > * {
 }
 
 .gray-bar {
-  background-color: var(--color-primary);
+  background-color: var(--color-dark);
   color: var(--color-white);
   padding: 1rem;
   display: flex;
@@ -151,4 +183,45 @@ body > * > * {
   display: flex;
   gap: 1.5rem;
   justify-content: flex-end;
+}
+
+#program {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  background-image: url(../images/texture.png);
+  background-size: 2rem 2rem;
+  background-repeat: repeat;
+}
+
+#program div {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#program hr {
+  margin: 1rem auto 3rem;
+  width: 2rem;
+  background-color: var(--color-accent);
+  height: 1px;
+  border:none;
+}
+
+#program ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+#program li {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+
+#program h3 {
+  color: var(--color-accent);
+  flex-grow: 1;
 }
