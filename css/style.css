@@ -50,6 +50,26 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  appearance: none;
+  border: none;
+  background: transparent;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* End reset styles */
 
 /* Variables */
@@ -57,6 +77,7 @@ table {
   --color-primary: #272a31;
   --color-accent: #ec5242;
   --color-negative: #d3d3d3;
+  --color-white: #fff;
   --ff-text: 'Lato', sans-serif;
   --ff-heading: 'Biryani', sans-serif;
 }
@@ -66,11 +87,68 @@ h1 {
   font-family: var(--ff-heading);
   font-weight: 900;
   font-size: 4em;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 body {
   font-family: var(--ff-text);
   color: var(--color-primary);
   font-size: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  display: flex;
+}
+
+body > * > * {
+  width: 98%;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.menu-bar {
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+}
+
+.menu-bar ul {
+  display: flex;
+  position: fixed;
+  inset: 5rem 0;
+  background-color: rgba(39,42,49,0.6);
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%); 
+  flex-direction: column;
+  width: 100%;
+}
+
+#logo {
+  display: none;
+}
+
+#intro {
+  flex-direction: column;
+}
+
+#hamburger {
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+}
+
+.gray-bar {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem;
+  display: flex;
+}
+
+.gray-bar > ul {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
 }

@@ -35,8 +35,8 @@ git clone https://github.com/indigodavid/dasik-band-events
 
 👤 **David Vera**
 
-- GitHub: [@githubhandle](https://github.com/indigodavid)
-- Twitter: [@twitterhandle](https://twitter.com/indigo1987)
+- GitHub: [@indigodavid](https://github.com/indigodavid)
+- Twitter: [@tindigo1987](https://twitter.com/indigo1987)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/david-vera-castillo-001b5756/)
 
 👤 **Cindy Shin**
