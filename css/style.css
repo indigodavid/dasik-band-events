@@ -144,6 +144,10 @@ body > * > * {
 #intro {
   flex-direction: column;
   margin: 2rem 0;
+  background-image: url(../images/intro-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #intro h2 {
@@ -288,11 +292,20 @@ hr {
 
 #about {
   text-align: center;
+  background-image: url(../images/about-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #about h2,
 #about h1 {
   color: var(--color-accent);
+}
+
+#about > .wrapper {
+  background-color: var(--color-white);
+  padding: 0 5%;
 }
 
 #past-events > .wrapper {
@@ -338,7 +351,7 @@ hr {
 
 .clip-letters {
   color: var(--color-white);
-  -webkit-text-fill-color: rgba(236, 82, 66, 0.6);
+  -webkit-text-fill-color: rgba(194, 58, 43, 0.7);
   background-image: url(../images/heading-background.jpeg);
   background-clip: text;
   background-repeat: no-repeat;

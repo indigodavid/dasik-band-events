@@ -24,7 +24,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 94%;
   gap: 1rem;
 }
 
@@ -49,4 +49,14 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+
+#events {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#events li {
+  flex-basis: 48%;
 }
