@@ -1,0 +1,52 @@
+.gray-bar {
+  display: flex;
+}
+
+#menu-links {
+  position: inherit;
+  flex-direction: row;
+  inset: inherit;
+  height: auto;
+  transform: none;
+  background-color: transparent;
+  gap: 1.2rem;
+  justify-content: flex-end;
+}
+
+#hamburger {
+  display: none;
+}
+
+#logo {
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+
+#logo {
+  white-space: nowrap;
+}
+
+.menu-bar {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+#program ul {
+  flex-direction: row;
+}
+
+#program li {
+  flex-direction: column;
+  text-align: center;
+}
+
+#featured ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}

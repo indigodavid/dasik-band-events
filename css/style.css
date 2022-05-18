@@ -125,7 +125,7 @@ body > * > * {
   height: 5rem;
 }
 
-.menu-bar ul {
+#menu-links {
   display: flex;
   position: fixed;
   inset: 5rem 0;
@@ -180,7 +180,7 @@ body > * > * {
   background-color: var(--color-dark);
   color: var(--color-white);
   padding: 1rem;
-  display: flex;
+  display: none;
 }
 
 .gray-bar > ul {
@@ -312,14 +312,34 @@ hr {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  position: relative;
+}
+
+#events li:hover > .overlay {
+  transform: scaleY(1);
 }
 
 .overlay {
   position: absolute;
   text-align: center;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  background-color: rgba(236, 82, 66, 0.8);
+  color: var(--color-white);
+  inset: 0 0;
+  width: 100%;
+  transform: scaleY(0);
 }
 
 .wrapper {
   margin-top: 3em;
   margin-bottom: 3em;
+}
+
+.clip-letters {
+  color: var(--color-white);
+  -webkit-text-fill-color: rgba(236, 82, 66, 0.6);
+  background-image: url(../images/heading-background.jpeg);
+  background-clip: text;
+  background-repeat: no-repeat;
 }
