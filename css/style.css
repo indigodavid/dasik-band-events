@@ -239,7 +239,7 @@ hr {
 
 #featured li {
   display: flex;
-  gap: 0.8rem;
+  gap: 1.2rem;
 }
 
 .info {
@@ -376,6 +376,7 @@ hr {
   color: var(--color-white);
   -webkit-text-fill-color: rgba(194, 58, 43, 0.6);
   background-image: url(../images/heading-background.jpeg);
+  -webkit-background-clip: text;
   background-clip: text;
   background-position: top left;
   background-size: 100%;
@@ -384,6 +385,41 @@ hr {
   animation-timing-function: ease-in-out;
   animation-duration: 20s;
   animation-iteration-count: infinite;
+}
+
+.photo {
+  width: 8rem;
+  min-width: 8rem;
+  background-color: var(--color-white);
+  padding-top: 0.6rem;
+  padding-left: 0.6rem;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.pattern {
+  background-image:  repeating-linear-gradient(45deg, #555 25%, transparent 25%, transparent 75%, #555 75%, #555), repeating-linear-gradient(45deg, #555 25%, #fff 25%, #fff 75%, #555 75%, #555);
+  background-position: top left, 4px 4px;
+  background-size: 8px 8px;
+  z-index: 0;
+  width: 4rem;
+  height: 4rem;
+  min-width: 4rem;
+  min-height: 4rem;
+}
+
+.photo img {
+  position: relative;
+  inset: -3.4rem 0.6rem;
+  z-index: 100;
+}
+
+.info {
+  padding-top: 0.6rem;
+}
+
+.partner-logos i {
+  font-size: 10rem;
 }
 
 @media screen and (max-width: 768px) {
