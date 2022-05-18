@@ -129,11 +129,14 @@ body > * > * {
   display: flex;
   position: fixed;
   inset: 5rem 0;
-  background-color: rgba(39,42,49,0.6);
+  background-color: rgba(194, 58, 43, 0.7);
   width: 100%;
   height: 100vh;
-  transform: translateX(100%); 
+  transform: translateX(100%);
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -274,7 +277,7 @@ hr {
 }
 
 .partner-logos li {
-  flex-basis: 26%;
+  flex-basis: 12rem;
 }
 
 .partner-logos img {
@@ -288,6 +291,11 @@ hr {
 
 #copyright > .wrapper > * {
   flex: 1 1 50%;
+}
+
+#copyright.cp-dark{
+  background-color: var(--color-dark);
+  color: var(--color-white);
 }
 
 #about {
@@ -355,4 +363,16 @@ hr {
   background-image: url(../images/heading-background.jpeg);
   background-clip: text;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  #menu-links.active {
+    transform: translateX(0);
+    padding-top: 3rem;
+    color: var(--color-white);
+    font-size: 2rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    line-height: 2;
+  }
 }
