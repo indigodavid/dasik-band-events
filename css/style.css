@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1.5;
+  line-height: 1.5;
   box-sizing: border-box;
 }
 
@@ -227,6 +227,10 @@ hr {
   justify-content: space-between;
 }
 
+#program i {
+  font-size: 3rem;
+}
+
 #program h3 {
   color: var(--color-accent);
   font-size: 1.4rem;
@@ -287,10 +291,7 @@ hr {
 #copyright > .wrapper {
   display: flex;
   gap: 0.8rem;
-}
-
-#copyright > .wrapper > * {
-  flex: 1 1 50%;
+  align-items: center;
 }
 
 #copyright.cp-dark{
@@ -352,6 +353,20 @@ hr {
   transform: scaleY(0);
 }
 
+.footer-logo {
+  flex: 2;
+}
+
+.footer-logo > img {
+  width: 90%;
+  max-width: 16rem;
+  height: auto;
+}
+
+.cp-info {
+  flex: 3;
+}
+
 .wrapper {
   margin-top: 3em;
   margin-bottom: 3em;
@@ -359,10 +374,16 @@ hr {
 
 .clip-letters {
   color: var(--color-white);
-  -webkit-text-fill-color: rgba(194, 58, 43, 0.7);
+  -webkit-text-fill-color: rgba(194, 58, 43, 0.6);
   background-image: url(../images/heading-background.jpeg);
   background-clip: text;
+  background-position: top left;
+  background-size: 100%;
   background-repeat: no-repeat;
+  animation-name: kenburns;
+  animation-timing-function: ease-in-out;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 
 @media screen and (max-width: 768px) {
@@ -374,5 +395,27 @@ hr {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     line-height: 2;
+  }
+}
+
+@keyframes kenburns {
+  from {
+    background-position: bottom left;
+  }  
+  25% {
+    background-position: bottom right;
+    background-size: 110%;
+  }
+  50% {
+    background-position: bottom left;
+    background-size: 115%;
+  }
+  75% {
+    background-position: bottom right;
+    background-size: 110%;
+  }
+  to {
+    background-position: bottom left;
+    background-size: 100%;
   }
 }

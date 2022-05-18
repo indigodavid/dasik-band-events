@@ -1,6 +1,6 @@
 const menuIcon = document.getElementById('hamburger');
 const menu = document.getElementById('menu-links');
-const menuLinks = document.querySelectorAll('menu-link');
+const menuLinks = document.querySelectorAll('.menu-link');
 
 function toggleMenu() {
   menu.classList.toggle('active');
@@ -12,5 +12,8 @@ function toggleMenu() {
 }
 
 menuIcon.addEventListener('click', toggleMenu);
-menuLinks.addEventListener('click', toggleMenu);
-
+menuLinks.forEach(
+  (link) => {
+    link.addEventListener('click', toggleMenu);
+  }
+);
