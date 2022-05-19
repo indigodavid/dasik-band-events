@@ -73,3 +73,16 @@ nav {
   color: var(--color-accent);
   margin-left: 2rem;
 }
+
+#copyright.cp-dark {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+#img-white {
+  display: block;
+}
+
+#img-dark {
+  display: none;
+}

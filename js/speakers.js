@@ -1,3 +1,4 @@
+const seeMore = document.getElementById('see-more-link');
 const speakers = document.getElementById('speakers');
 const speakerData = [
   {
@@ -33,6 +34,7 @@ function generateLi(index) {
   const h3 = document.createElement('h3');
   const h4 = document.createElement('h4');
   const p = document.createElement('p');
+  const hr = document.createElement('hr');
 
   photo.classList.add('photo');
   info.classList.add('info');
@@ -44,13 +46,30 @@ function generateLi(index) {
 
   info.appendChild(h3);
   info.appendChild(h4);
+  info.appendChild(hr);
   info.appendChild(p);
 
   li.appendChild(photo);
   li.appendChild(info);
+  if (index > 1) {
+    li.classList.add('hidden-speaker');
+  }
   return li;
 }
 
 for (let i = 0; i < speakerData.length; i += 1) {
   speakers.appendChild(generateLi(i));
 }
+
+seeMore.addEventListener('click', (e) => {
+  for (let i = 0; i < speakers.children.length; i += 1) {
+    if (i > 1) {
+      speakers.children[i].classList.toggle('hidden-speaker');
+    }
+  }
+  if (speakers.lastChild.classList.contains('hidden-speaker')) {
+    seeMore.innerHTML = 'More <i class="fa-solid fa-angle-down"></i>';
+  } else {
+    seeMore.innerHTML = 'Less <i class="fa-solid fa-angle-up"></i>';
+  }
+});
