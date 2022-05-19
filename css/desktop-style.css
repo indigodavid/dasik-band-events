@@ -2,26 +2,6 @@
   display: flex;
 }
 
-#menu-links {
-  position: inherit;
-  flex-direction: row;
-  inset: inherit;
-  height: auto;
-  transform: none;
-  background-color: transparent;
-  gap: 1.2rem;
-  justify-content: flex-end;
-}
-
-#menu-links li:last-child {
-  border-width: 2px;
-  border-color: var(--color-accent);
-  border-style: solid;
-  padding: 1rem;
-  color: var(--color-accent);
-  margin-left: 2rem;
-}
-
 #hamburger {
   display: none;
 }
@@ -41,10 +21,6 @@ nav {
   width: 94%;
   gap: 1rem;
   align-items: center;
-}
-
-#logo {
-  white-space: nowrap;
 }
 
 .menu-bar {
@@ -76,4 +52,24 @@ nav {
 
 #events li {
   flex-basis: 48%;
+}
+
+#menu-links {
+  position: inherit;
+  flex-direction: row;
+  inset: inherit;
+  height: auto;
+  transform: none;
+  background-color: transparent;
+  gap: 1.2rem;
+  justify-content: flex-end;
+}
+
+#menu-links li:last-child {
+  border-width: 2px;
+  border-color: var(--color-accent);
+  border-style: solid;
+  padding: 1rem;
+  color: var(--color-accent);
+  margin-left: 2rem;
 }

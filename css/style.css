@@ -1,58 +1,133 @@
 /* Reset Styles */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-body {
-  line-height: 1.5;
-  box-sizing: border-box;
-}
-
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 li {
   display: flex;
 }
 
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 img {
@@ -86,6 +161,7 @@ a:focus {
   --ff-text: 'Lato', sans-serif;
   --ff-heading: 'Biryani', sans-serif;
 }
+
 /* End variables */
 
 h1 {
@@ -101,6 +177,8 @@ section h2 {
 }
 
 body {
+  line-height: 1.5;
+  box-sizing: border-box;
   font-family: var(--ff-text);
   color: var(--color-primary);
   font-size: 1em;
@@ -137,11 +215,34 @@ body > * > * {
   transition-timing-function: ease-in-out;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 #logo {
   display: none;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 0.6rem;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.info h4 {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.info p {
+  font-size: 0.95rem;
+  justify-self: flex-end;
 }
 
 #intro {
@@ -159,7 +260,7 @@ body > * > * {
 }
 
 #intro h3 {
-  font-size: 2rem;;
+  font-size: 2rem;
   font-weight: 900;
   font-family: var(--ff-heading);
 }
@@ -196,6 +297,28 @@ body > * > * {
   justify-content: flex-end;
 }
 
+.partner-logos > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  align-self: center;
+}
+
+.partner-logos li {
+  flex-basis: 12rem;
+}
+
+.partner-logos img {
+  margin: 0 auto;
+}
+
+.partner-logos i {
+  font-size: 10rem;
+}
+
 #program {
   background-color: var(--color-dark);
   color: var(--color-white);
@@ -209,7 +332,7 @@ hr {
   width: 2rem;
   background-color: var(--color-accent);
   height: 1px;
-  border:none;
+  border: none;
 }
 
 #program ul {
@@ -242,50 +365,14 @@ hr {
   gap: 1.2rem;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.info h3 {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: var(--color-dark);
-}
-
-.info h4 {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: var(--color-accent);
-}
-
-.info p {
-  font-size: 0.95rem;
-  justify-self: flex-end;
+.wrapper {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 #partners {
   background-color: var(--color-dark);
   color: var(--color-primary);
-}
-
-.partner-logos > ul {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
-  align-self: center;
-}
-
-.partner-logos li {
-  flex-basis: 12rem;
-}
-
-.partner-logos img {
-  margin: 0 auto;
 }
 
 #copyright > .wrapper {
@@ -294,7 +381,7 @@ hr {
   align-items: center;
 }
 
-#copyright.cp-dark{
+#copyright.cp-dark {
   background-color: var(--color-dark);
   color: var(--color-white);
 }
@@ -353,10 +440,6 @@ hr {
   position: relative;
 }
 
-#events li:hover > .overlay {
-  transform: scaleY(1);
-}
-
 .overlay {
   position: absolute;
   text-align: center;
@@ -374,6 +457,10 @@ hr {
   align-items: center;
 }
 
+#events li:hover > .overlay {
+  transform: scaleY(1);
+}
+
 .footer-logo {
   flex: 2;
 }
@@ -388,17 +475,11 @@ hr {
   flex: 3;
 }
 
-.wrapper {
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
-
 .clip-letters {
   color: var(--color-white);
   -webkit-text-fill-color: rgba(194, 58, 43, 0.6);
   background-image: url(../images/heading-background.jpeg);
   -webkit-background-clip: text;
-  background-clip: text;
   background-position: top left;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -419,7 +500,7 @@ hr {
 }
 
 .pattern {
-  background-image:  repeating-linear-gradient(45deg, #555 25%, transparent 25%, transparent 75%, #555 75%, #555), repeating-linear-gradient(45deg, #555 25%, #fff 25%, #fff 75%, #555 75%, #555);
+  background-image: repeating-linear-gradient(45deg, #555 25%, transparent 25%, transparent 75%, #555 75%, #555), repeating-linear-gradient(45deg, #555 25%, #fff 25%, #fff 75%, #555 75%, #555);
   background-position: top left, 4px 4px;
   background-size: 8px 8px;
   z-index: 0;
@@ -433,14 +514,6 @@ hr {
   position: relative;
   inset: -3.4rem 0.6rem;
   z-index: 100;
-}
-
-.info {
-  padding-top: 0.6rem;
-}
-
-.partner-logos i {
-  font-size: 10rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -458,19 +531,23 @@ hr {
 @keyframes kenburns {
   from {
     background-position: bottom left;
-  }  
+  }
+
   25% {
     background-position: bottom right;
     background-size: 110%;
   }
+
   50% {
     background-position: bottom left;
     background-size: 115%;
   }
+
   75% {
     background-position: bottom right;
     background-size: 110%;
   }
+
   to {
     background-position: bottom left;
     background-size: 100%;

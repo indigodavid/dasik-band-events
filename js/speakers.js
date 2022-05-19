@@ -51,6 +51,6 @@ function generateLi(index) {
   return li;
 }
 
-for(let i = 0; i < speakerData.length; i += 1) {
+for (let i = 0; i < speakerData.length; i += 1) {
   speakers.appendChild(generateLi(i));
 }
