@@ -2,7 +2,7 @@
 
 # Dasik Band Events Page
 
-> This project contains the information and events for Dasik Band.
+> This project contains the information and events for Dasik Band. Check this [video](https://www.loom.com/share/a24d6e06bfe9444e8dbb34516c93466d) describing this project's features.
 
 
 ## Built With
@@ -35,8 +35,8 @@ git clone https://github.com/indigodavid/dasik-band-events
 
 👤 **David Vera**
 
-- GitHub: [@githubhandle](https://github.com/indigodavid)
-- Twitter: [@twitterhandle](https://twitter.com/indigo1987)
+- GitHub: [@indigodavid](https://github.com/indigodavid)
+- Twitter: [@tindigo1987](https://twitter.com/indigo1987)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/david-vera-castillo-001b5756/)
 
 👤 **Cindy Shin**
