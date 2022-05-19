@@ -312,9 +312,25 @@ hr {
   color: var(--color-accent);
 }
 
+#about p {
+  margin-bottom: 1.2rem;
+}
+
 #about > .wrapper {
   background-color: var(--color-white);
   padding: 0 5%;
+}
+
+#about-info p {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+#about-info a {
+  margin: 1.2rem auto;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 #past-events > .wrapper {
@@ -351,6 +367,11 @@ hr {
   inset: 0 0;
   width: 100%;
   transform: scaleY(0);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-logo {
