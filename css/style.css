@@ -196,6 +196,14 @@ body > * > * {
   margin: 0 auto;
 }
 
+hr {
+  margin: 1rem auto 3rem;
+  width: 2rem;
+  background-color: var(--color-accent);
+  height: 1px;
+  border: none;
+}
+
 .menu-bar {
   flex-direction: row;
   align-items: center;
@@ -323,20 +331,42 @@ body > * > * {
   font-size: 10rem;
 }
 
+.wrapper {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#featured li {
+  display: flex;
+  gap: 1.2rem;
+}
+
+#past-events > .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+#events {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#events li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+}
+
 #program {
   background-color: var(--color-dark);
   color: var(--color-white);
   background-image: url(../images/texture.png);
   background-size: 2rem 2rem;
   background-repeat: repeat;
-}
-
-hr {
-  margin: 1rem auto 3rem;
-  width: 2rem;
-  background-color: var(--color-accent);
-  height: 1px;
-  border: none;
 }
 
 #program ul {
@@ -379,16 +409,6 @@ hr {
 
 #program-link a {
   text-decoration: underline;
-}
-
-#featured li {
-  display: flex;
-  gap: 1.2rem;
-}
-
-.wrapper {
-  margin-top: 3em;
-  margin-bottom: 3em;
 }
 
 #partners {
@@ -436,26 +456,6 @@ hr {
   text-decoration: underline;
 }
 
-#past-events > .wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  align-items: center;
-}
-
-#events {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-#events li {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  position: relative;
-}
-
 .overlay {
   position: absolute;
   text-align: center;
@@ -496,7 +496,8 @@ hr {
   -webkit-text-fill-color: rgba(194, 58, 43, 0.6);
   background-image: url(../images/heading-background.jpeg);
   -webkit-background-clip: text;
-  background-clip: text; /* stylelint-disable-line - Valid value for Safari Browser */
+  /* stylelint-disable-next-line -- Valid value for Safari Browser */
+  background-clip: text;
   background-position: top left;
   background-size: 100%;
   background-repeat: no-repeat;

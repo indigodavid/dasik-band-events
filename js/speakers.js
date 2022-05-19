@@ -61,7 +61,7 @@ for (let i = 0; i < speakerData.length; i += 1) {
   speakers.appendChild(generateLi(i));
 }
 
-seeMore.addEventListener('click', (e) => {
+seeMore.addEventListener('click', () => {
   for (let i = 0; i < speakers.children.length; i += 1) {
     if (i > 1) {
       speakers.children[i].classList.toggle('hidden-speaker');

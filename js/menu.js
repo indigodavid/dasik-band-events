@@ -1,7 +1,6 @@
 const menuIcon = document.getElementById('hamburger');
 const menu = document.getElementById('menu-links');
 const menuLinks = document.querySelectorAll('.menu-link');
-const cclogo = document.getElementById('footer-logo');
 
 function toggleMenu() {
   menu.classList.toggle('active');
