@@ -1,4 +1,4 @@
-const seeMore = document.getElementById('see-more-link');
+const seeMore = document.getElementById('see-more');
 const speakers = document.getElementById('speakers');
 const speakerData = [
   {
