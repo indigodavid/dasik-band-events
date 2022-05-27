@@ -263,7 +263,13 @@ hr {
 
 .song {
   text-decoration: underline;
-  transform: scale(1);
+  transition-timing-function: ease;
+  transition-duration: 0.2s;
+}
+
+.song:hover {
+  text-decoration: underline;
+  font-size: larger;
 }
 
 #intro {
