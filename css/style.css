@@ -190,6 +190,10 @@ body > * {
   display: flex;
 }
 
+script {
+  display: none;
+}
+
 body > * > * {
   width: 94%;
   max-width: 70rem;
@@ -255,6 +259,11 @@ hr {
 .info p {
   font-size: 0.95rem;
   justify-self: flex-end;
+}
+
+.song {
+  text-decoration: underline;
+  transform: scale(1);
 }
 
 #intro {
